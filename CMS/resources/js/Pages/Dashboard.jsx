@@ -1,6 +1,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
 import PostsList from '../Components/PostsList ';
+import Carrucel from '@/Components/Carusel';
 
 export default function Dashboard() {
     return (
@@ -25,8 +26,8 @@ export default function Dashboard() {
                     <div className=" bg-neutral-800 h-2/5 w-full p-10 ">
                         <div className=" bg-neutral-600  h-full ">
                             <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800 w-4/5 h-4/5 m-auto p-auto">
-                                <div className=" p-auto text-gray-900 dark:text-gray-100">
-                                    carrucel aqui
+                                <div className=" p-auto m-auto ">
+                                    <Carrucel/>
                                 </div>
                             </div>
                         </div>
