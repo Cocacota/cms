@@ -4,6 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PostController;
+
+Route::get('/api/posts', [PostController::class, 'index']); // Ruta para obtener todas las publicaciones
+Route::get('/api/posts/{id}', [PostController::class, 'show']); // Ruta para obtener una publicación específica
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
