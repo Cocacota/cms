@@ -16,13 +16,12 @@ return new class extends Migration
             $table->timestamps();
             $table->string('titulo');
             $table->string('contenido');
-            $table->file('imagen');
-            $table->int('likes');
-            $table->unsignedBigInteger('comentarios_id');
+            $table->integer('likes');
+            
             $table->unsignedBigInteger('user_id');
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('comentarios_id')->references('id')->on('comentarios')->onDelete('cascade');
+            
 
         });
     }

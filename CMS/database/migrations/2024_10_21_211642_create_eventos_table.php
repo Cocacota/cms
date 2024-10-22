@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->string('descripcion');
             $table->date('fecha');
-            $table->int('hora');
+            $table->datetime('hora');
             $table->unsignedBigInteger('equipos_id');
 
             $table->foreign('equipos_id')->references('id')->on('equipos')->onDelete('cascade');
