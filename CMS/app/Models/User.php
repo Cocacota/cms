@@ -20,27 +20,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'posts_id',
-        'like_id',
-        'comentario_id',
-        'equipo_id',
+        
     ];
-    public function comentarios()
-    {
-        return $this->hasMany(Comentarios::class);
-    }
-    public function posts()
-    {
-        return $this->hasMany(Posts::class);
-    }
-    public function like()
-    {
-        return $this->hasMany(Like::class);
-    }
-    public function equipos()
-    {
-        return $this->hasMany(Equipos::class);
-    }
+    
+    
 
     /**
      * The attributes that should be hidden for serialization.

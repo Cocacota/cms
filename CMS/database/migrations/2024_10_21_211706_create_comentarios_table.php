@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('comentarios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('contenido');
+            $table->text('contenido');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('posts_id');
 

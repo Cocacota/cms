@@ -5,6 +5,9 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\posts;
+
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,9 +18,30 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        
+        posts::create([
+            'titulo'=>'holaMundo',
+            'contenido'=>'aqui comentando como anda la gente',
+            'user_id'=>1,
+            'likes'=>4,
+        ]);
+        posts::create([
+            'titulo'=>'que onda',
+            'contenido'=>' como anda la gente',
+            'user_id'=>1,
+            'likes'=>4,
+        ]);
+        posts::create([
+            'titulo'=>'hello',
+            'contenido'=>'aqui comentando ',
+            'user_id'=>1,
+            'likes'=>4,
+        ]);
+        posts::create([
+            'titulo'=>'asasdasd',
+            'contenido'=>'aasdasdareawe',
+            'user_id'=>1,
+            'likes'=>4,
         ]);
     }
 }

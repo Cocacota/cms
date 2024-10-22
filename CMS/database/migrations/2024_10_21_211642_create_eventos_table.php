@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('titulo');
-            $table->string('descripcion');
+            $table->text('descripcion');
             $table->date('fecha');
             $table->datetime('hora');
             $table->unsignedBigInteger('equipos_id');

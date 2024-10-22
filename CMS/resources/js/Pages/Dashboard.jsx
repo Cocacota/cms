@@ -1,6 +1,5 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-import PostsList from '../Components/PostsList ';
 import Carrucel from '@/Components/Carusel';
 
 export default function Dashboard() {
@@ -34,7 +33,8 @@ export default function Dashboard() {
                     </div>
                     <div className=" bg-neutral-100 flex h-full ">
                         <div className="bg-neutral-300 h-full w-4/6 m-10 p-10">
-                            <PostsList/>
+                        
+                        aqui posts
                         </div>
                         <div className="bg-red-700 w-2/6 h-full block">
                         <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800 w-4/5 m-8">
