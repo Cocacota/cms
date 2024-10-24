@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->text('titulo');
             $table->text('contenido');
-            $table->integer('likes');
+            $table->integer('like')->default(1)->change();
             
             $table->unsignedBigInteger('user_id');
 

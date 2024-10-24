@@ -19,5 +19,6 @@ class posts extends Model
     {
         return $this->hasMany(Comentarios::class);
     }
+    
 
 }

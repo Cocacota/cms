@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Inertia } from '@inertiajs/inertia';
 
 const PostCreate = () => {
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
+    const [titulo, setTitle] = useState('');
+    const [contenido, setContent] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,14 +18,14 @@ const PostCreate = () => {
                     <label>Título</label>
                     <input 
                         type="text" 
-                        value={title} 
+                        value={titulo} 
                         onChange={(e) => setTitle(e.target.value)} 
                     />
                 </div>
                 <div>
                     <label>Contenido</label>
                     <textarea 
-                        value={content} 
+                        value={contenido} 
                         onChange={(e) => setContent(e.target.value)} 
                     ></textarea>
                 </div>
